@@ -24,8 +24,8 @@ A modern React application built with TypeScript, Vite, TailwindCSS, Tanstack Re
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com//TheJoshJ/Vite-Template-App.git
+cd Vite-Template-App
 ```
 
 2. Install dependencies:
