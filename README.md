@@ -10,6 +10,7 @@ A modern React application built with TypeScript, Vite, TailwindCSS, Tanstack Re
 - 🧭 **Tanstack React Router** - Type-safe routing
 - 🔄 **Tanstack React Query** - Data fetching and state management
 - 🔐 **Clerk Authentication** - User authentication and management
+- 🎭 **ShadCN UI** - Complete component library pre-installed
 - 📱 **Responsive Design** - Mobile-first approach
 - 🧩 **Component Structure** - Organized component architecture
 - 🌙 **Dark/Light Mode** - Theme switching with next-themes
@@ -61,7 +62,7 @@ pnpm start
 ├── src/
 │   ├── components/       # Reusable components
 │   │   ├── auth/         # Authentication components
-│   │   └── ui/           # UI components
+│   │   └── ui/           # UI components (ShadCN)
 │   ├── hooks/            # Custom React hooks
 │   ├── lib/              # Utility functions
 │   ├── pages/            # Page components
@@ -72,7 +73,7 @@ pnpm start
 │   ├── RouterProvider.tsx # Router provider
 │   └── routes.ts         # Routes definition
 ├── .gitignore
-├── components.json       # Shadcn UI components config
+├── components.json       # ShadCN UI components config
 ├── index.html
 ├── package.json
 ├── tailwind.config.js    # TailwindCSS configuration
@@ -118,6 +119,14 @@ export const routes: Record<string, RouteConfig> = {
 ## Authentication
 
 This project uses Clerk for authentication. The Clerk provider is set up in `src/main.tsx` and integrated with Tanstack Router in `src/router.tsx`.
+
+## UI Components
+
+This project comes with the complete ShadCN UI component library pre-installed. ShadCN UI provides a comprehensive set of accessible, customizable, and reusable components built on top of Radix UI primitives.
+
+All components are available in the `src/components/ui` directory and can be imported and used directly in your application. The components are styled with TailwindCSS and can be customized to match your design system.
+
+For more information on available components and their usage, refer to the [ShadCN UI documentation](https://ui.shadcn.com/docs).
 
 ## Styling
 
