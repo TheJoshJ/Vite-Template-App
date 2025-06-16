@@ -1,13 +1,13 @@
 # Modern React Application with Authentication
 
-A modern React application built with TypeScript, Vite, TailwindCSS, Tanstack React Router, Tanstack React Query, and Clerk Authentication.
+A modern React application built with TypeScript, Vite, TailwindCSS, React Router, Tanstack React Query, and Clerk Authentication.
 
 ## Features
 
 - ⚡️ **Vite with SWC** - Lightning fast builds and HMR
 - 🔒 **TypeScript** - Full type safety
 - 🎨 **TailwindCSS 4** - Utility-first CSS framework
-- 🧭 **Tanstack React Router** - Type-safe routing
+- 🧭 **React Router** - Declarative routing for React
 - 🔄 **Tanstack React Query** - Data fetching and state management
 - 🔐 **Clerk Authentication** - User authentication and management
 - 🎭 **ShadCN UI** - Complete component library pre-installed
@@ -118,7 +118,7 @@ export const routes: Record<string, RouteConfig> = {
 
 ## Authentication
 
-This project uses Clerk for authentication. The Clerk provider is set up in `src/main.tsx` and integrated with Tanstack Router in `src/router.tsx`.
+This project uses Clerk for authentication. The Clerk provider is set up in `src/main.tsx` and integrated with React Router in `src/router.tsx`.
 
 ## UI Components
 

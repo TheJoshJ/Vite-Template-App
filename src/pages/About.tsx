@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="text-2xl font-semibold mb-4 text-primary-700">Our Story</h2>
         <p className="mb-4 text-gray-700">
           This is a starter template built with React, TypeScript, Vite, TailwindCSS, 
-          Tanstack React Router, and Tanstack React Query. It's designed to provide a solid 
+          React Router, and Tanstack React Query. It's designed to provide a solid 
           foundation for your next web application.
         </p>
         <p className="text-gray-700">
@@ -23,7 +23,7 @@ const About = () => {
           <li>TypeScript - Type safety</li>
           <li>Vite with SWC - Fast development and building</li>
           <li>TailwindCSS 4 - Utility-first CSS framework</li>
-          <li>Tanstack React Router - Type-safe routing</li>
+          <li>React Router - Declarative routing for React</li>
           <li>Tanstack React Query - Data fetching and state management</li>
         </ul>
       </div>
