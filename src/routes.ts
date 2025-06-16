@@ -1,9 +1,9 @@
-import { type RouteComponent } from "@tanstack/react-router";
+import { type ComponentType } from "react";
 import Home from "./pages/Home";
 
 export interface RouteConfig {
   path: string;
-  component: RouteComponent<any>;
+  component: ComponentType<any>;
   label: string;
   visible?: boolean;
 }
@@ -18,5 +18,5 @@ export const routes: Record<string, RouteConfig> = {
 };
 
 export const visibleRoutes = Object.values(routes).filter(
-  (route) => route.visible
+  (route) => route.visible !== false
 );
