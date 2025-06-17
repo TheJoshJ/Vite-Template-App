@@ -5,25 +5,18 @@ import { ScrollArea } from "./ui/scroll-area";
 
 export const Layout = () => {
   return (
-    <div className="h-screen flex flex-col">
-      <header className="bg-primary-800 text-white p-4 shadow-md h-[68px]">
+    <div className="h-screen flex flex-col bg-background text-foreground">
+      <header className="bg-background text-foreground p-2 border-b border-muted">
         <Navbar />
       </header>
 
       {/* Main Content - flex-grow to take remaining space */}
-      <main className="flex-grow overflow-auto p-4">
+      <main className="flex-grow overflow-auto">
         <ScrollArea className="h-full">
           <Outlet />
         </ScrollArea>
+        <ToastContainer />
       </main>
-
-      <ToastContainer />
-
-      <footer className="bg-primary-900 text-white p-4 h-[56px]">
-        <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} My App. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };

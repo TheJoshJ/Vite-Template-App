@@ -1,11 +1,12 @@
 import { type ComponentType } from "react";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 
 export interface RouteConfig {
   path: string;
   component: ComponentType<any>;
   label: string;
   visible?: boolean;
+  protected?: boolean;
 }
 
 export const routes: Record<string, RouteConfig> = {
